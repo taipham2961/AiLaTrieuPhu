@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5FE">
+
+    <TextView
+        android:id="@+id/tvGoiDien"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="Gọi điện cho người thân"
+        android:textColor="#E1F5FE"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/imgBtnMe"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvGoiDien"
+        android:layout_marginLeft="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/female" />
+
+    <ImageButton
+        android:id="@+id/imgBtnBo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tvGoiDien"
+        android:layout_marginLeft="25dp"
+        android:layout_toEndOf="@+id/imgBtnMe"
+        android:layout_toRightOf="@+id/imgBtnMe"
+        android:scaleType="centerCrop"
+        android:src="@drawable/male" />
+
+    <ImageButton
+        android:id="@+id/imgBtnAnhTrai"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/tvGoiDien"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/imgBtnBo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bro" />
+
+
+    <TextView
+        android:id="@+id/tvMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBtnMe"
+        android:layout_marginLeft="65dp"
+        android:text="Mẹ"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvBo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBtnMe"
+        android:layout_marginLeft="105dp"
+        android:layout_toRightOf="@id/tvMe"
+        android:text="Bố"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvBo"
+        android:layout_alignBottom="@+id/tvBo"
+        android:layout_marginLeft="40dp"
+        android:layout_toEndOf="@+id/imgBtnBo"
+        android:layout_toRightOf="@+id/imgBtnBo"
+        android:text="Anh trai"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvLoiKhuyen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/tvBo"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+</RelativeLayout>
